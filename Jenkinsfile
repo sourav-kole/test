@@ -12,6 +12,6 @@ node {
     }
 
     stage('Deploy') {
-        bat("move C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\test-pipeline\\dist\\test\\*.* \\\\wsl.localhost\\Ubuntu\\var\\www\\html")
+        bat("move C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\test-pipeline\\dist\\test\\*.* \\C:\\Apache24\\htdocs")
     }
 }
