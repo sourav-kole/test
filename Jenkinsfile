@@ -4,7 +4,7 @@ node {
     }
 
     stage('Install node modules') {
-        bat "npm install"
+        bat "npm i npm-install-peers"
     }
 
     stage('Build') {
