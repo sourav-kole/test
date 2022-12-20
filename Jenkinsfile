@@ -12,6 +12,6 @@ node {
     }
 
     stage('Deploy') {
-        move C:\ProgramData\Jenkins\.jenkins\workspace\test-pipeline\dist\test\*.* \\wsl.localhost\Ubuntu\var\www\html
+        bat("xcopy C:\ProgramData\Jenkins\.jenkins\workspace\test-pipeline\dist\test\*.* \\wsl.localhost\Ubuntu\var\www\html")
     }
 }
