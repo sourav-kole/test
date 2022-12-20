@@ -10,4 +10,8 @@ node {
     stage('Build') {
         bat "npm run-script build --prod"
     }
+
+    stage('Deploy') {
+        move C:\ProgramData\Jenkins\.jenkins\workspace\test-pipeline\dist\test\*.* \\wsl.localhost\Ubuntu\var\www\html
+    }
 }
